@@ -77,18 +77,24 @@
 <div class="main">
     <div class="content-inner">
         <div class="posts">
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/post/b45dd49f.html">V2ray 实现 nginx +ws + tls + cdn 上 Google</a></h2>
-            </div>
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">V2ray 实现 nginx +ws + tls + cdn 上 Google</h2>
             <div class="post-meta">
                 <span class="post-time">2021-05-12</span>
                 
+                <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
             </div>
-            <div class="post-content">
-                
-                    <p>前言：<br>《V2ray 实现 nginx +ws + tls + cdn 上 Google》文章中采用的官方脚本已经被官方遗弃了，这两天看到官方新增了最新的 VLESS 协议，就再写一篇文章教大家不依赖第三方脚本，依照官方方法搭建兼容宝塔的VLESS 模式。VMESS 相信大家都不陌生了，他是V2RAY 的传输协议。但是在 5 月 V2RAY 爆出新闻之后，很多大神们都在弄一个新的协议，最具代表的就是 VLESS 协议。如官方所说，VLESS 是一个无状态的轻量传输协议，它分为入站和出站两部分，可以作为 V2Ray 客户端和服务器之间的桥梁。与 VMess 不同，VLESS 不依赖于系统时间（之前的文章很多小伙伴都被这一步给坑了），认证方式同样为 UUID，但不需要 alterId。</p>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <p>前言：<br>《V2ray 实现 nginx +ws + tls + cdn 上 Google》文章中采用的官方脚本已经被官方遗弃了，这两天看到官方新增了最新的 VLESS 协议，就再写一篇文章教大家不依赖第三方脚本，依照官方方法搭建兼容宝塔的VLESS 模式。VMESS 相信大家都不陌生了，他是V2RAY 的传输协议。但是在 5 月 V2RAY 爆出新闻之后，很多大神们都在弄一个新的协议，最具代表的就是 VLESS 协议。如官方所说，VLESS 是一个无状态的轻量传输协议，它分为入站和出站两部分，可以作为 V2Ray 客户端和服务器之间的桥梁。与 VMess 不同，VLESS 不依赖于系统时间（之前的文章很多小伙伴都被这一步给坑了），认证方式同样为 UUID，但不需要 alterId。</p>
 <p>首先我们得拥有一个自己的域名和一个服务器（国外），可以是付费的可以是免费的。<br>大雄推荐新手使用VULTR的 VPS，VULTR 的 VPS 对新手比较友好，支持随时免费更换 ip 随时更换系统等环境，都是一键的。等熟练上手自己不会被封 ip 之后可以再找一款你心仪的 VPS。<br>感谢使用大雄的推广链接进行注册:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[www.vultr.com](https://www.vultr.com/?ref=8317254)</span><br></pre></td></tr></table></figure>
 <p>使用上面链接注册好之后会赠送 100 美元的体验金，足够你测试挥霍了。</p>
@@ -140,60 +146,23 @@
 <p>额外的命令参数</p>
 <p>移除 V2Ray（如果你不是准备卸载 V2ray ，这条命令你可以忽略，不要执行！）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash install-release.sh --remove</span><br></pre></td></tr></table></figure>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/post/5782501d.html">love</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2021-05-10</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>I LOVE YOU</p>
-                    <div class="read-more">
-                        <a href="/post/5782501d.html" class="read-more-link">
-                            ReadMore
-                            <i class="iconfont icon-readmore"></i>
-                        </a>
-                    </div>
-                
-            </div>
-        </article>
-    
-        <article class="post-abstract">
-            <div class="post-title">
-                <h2><a class="post-title-link" href="/post/16107.html">Hello World</a></h2>
-            </div>
-            <div class="post-meta">
-                <span class="post-time">2021-05-09</span>
-                
-            </div>
-            <div class="post-content">
-                
-                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-                    <div class="read-more">
-                        <a href="/post/16107.html" class="read-more-link">
-                            ReadMore
-                            <i class="iconfont icon-readmore"></i>
-                        </a>
-                    </div>
-                
-            </div>
-        </article>
-    
+        </div>
+        
+    </article>
 </div>
 <div class="paginator">
     
         
         
+            <a class="next" href="/post/5782501d.html">
+                <span class="nav-default">love</span>
+                <span class="nav-mobile">Next</span>
+                <i class="iconfont icon-next"></i>
+            </a>
+        
     
 </div>
-
+<div id="comment-container"></div>
     </div>
 </div>
 <footer class="footer-social">
