@@ -94,7 +94,7 @@
     </div>
 </div>
         <div class="post-content">
-            <p>前言：<br>《V2ray 实现 nginx +ws + tls + cdn 上 Google》文章中采用的官方脚本已经被官方遗弃了，这两天看到官方新增了最新的 VLESS 协议，就再写一篇文章教大家不依赖第三方脚本，依照官方方法搭建兼容宝塔的VLESS 模式。VMESS 相信大家都不陌生了，他是V2RAY 的传输协议。但是在 5 月 V2RAY 爆出新闻之后，很多大神们都在弄一个新的协议，最具代表的就是 VLESS 协议。如官方所说，VLESS 是一个无状态的轻量传输协议，它分为入站和出站两部分，可以作为 V2Ray 客户端和服务器之间的桥梁。与 VMess 不同，VLESS 不依赖于系统时间（之前的文章很多小伙伴都被这一步给坑了），认证方式同样为 UUID，但不需要 alterId。</p>
+            <p>前言：<br>《V2ray 实现 nginx +ws + tls + cdn 上 Google》文章中采用的官方脚本已经被官方遗弃了，这两天看到官方新增了最新的 VLESS 协议，就再写一篇文章教大家不依赖第三方脚本，依照官方方法搭建兼容宝塔的VLESS 模式。VMESS 相信大家都不陌生了，他是V2RAY 的传输协议。<span id="more"></span>但是在 5 月 V2RAY 爆出新闻之后，很多大神们都在弄一个新的协议，最具代表的就是 VLESS 协议。如官方所说，VLESS 是一个无状态的轻量传输协议，它分为入站和出站两部分，可以作为 V2Ray 客户端和服务器之间的桥梁。与 VMess 不同，VLESS 不依赖于系统时间（之前的文章很多小伙伴都被这一步给坑了），认证方式同样为 UUID，但不需要 alterId。</p>
 <p>首先我们得拥有一个自己的域名和一个服务器（国外），可以是付费的可以是免费的。<br>大雄推荐新手使用VULTR的 VPS，VULTR 的 VPS 对新手比较友好，支持随时免费更换 ip 随时更换系统等环境，都是一键的。等熟练上手自己不会被封 ip 之后可以再找一款你心仪的 VPS。<br>感谢使用大雄的推广链接进行注册:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[www.vultr.com](https://www.vultr.com/?ref=8317254)</span><br></pre></td></tr></table></figure>
 <p>使用上面链接注册好之后会赠送 100 美元的体验金，足够你测试挥霍了。</p>
